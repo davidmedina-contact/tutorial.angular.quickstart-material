@@ -1,0 +1,9 @@
+<h2>Top Heroes</h2>
+
+<mat-grid-list cols="4" rowHeight="1:1" gutterSize="2em">
+    <mat-grid-tile *ngFor="let hero of heroes">
+        <button mat-raised-button color="accent" [routerLink]="['/detail', hero.id]">{{hero.name}}</button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<hero-search></hero-search>

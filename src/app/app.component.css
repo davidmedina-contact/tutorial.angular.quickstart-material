@@ -1,0 +1,21 @@
+mat-sidenav-container {
+  height: 100%;
+}
+
+mat-sidenav {
+  width: 15em;
+}
+
+mat-toolbar {
+  margin-bottom: 2em;
+}
+
+h1 {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+nav {
+  margin-bottom: 2em;
+  text-align: center;
+}

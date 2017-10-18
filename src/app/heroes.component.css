@@ -1,0 +1,21 @@
+mat-spinner {
+  margin: 2em auto;
+}
+
+.hero-list {
+  margin-bottom: 6em;
+}
+  .hero-list h3 {
+    margin: 1em;
+  }
+  .hero-list .delete {
+    position: absolute;
+    right: 1em;
+    top: 0.4em;
+  }
+
+#add {
+  bottom: 1em;
+  position: fixed;
+  right: 1em;
+}

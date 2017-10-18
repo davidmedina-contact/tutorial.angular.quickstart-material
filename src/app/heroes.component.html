@@ -1,0 +1,21 @@
+<h2>My Heroes</h2>
+
+<mat-spinner *ngIf="!heroes"></mat-spinner>
+
+<mat-nav-list class="hero-list" *ngIf="heroes">
+  <mat-list-item *ngFor="let hero of heroes" (click)="openSelectedDialog(hero)" [class.selected]="hero === selectedHero">
+    <mat-chip-list>
+      <mat-chip selected="true" color="primary">{{hero.id}}</mat-chip>
+    </mat-chip-list>
+
+    <h3>{{hero.name}}</h3>
+
+    <button mat-icon-button class="delete" (click)="delete(hero); $event.stopPropagation()">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>
+
+<button id="add" mat-fab color="accent" (click)="openAddDialog();">
+  <mat-icon>add</mat-icon>
+</button>

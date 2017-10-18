@@ -1,0 +1,21 @@
+<mat-card class="hero-card" *ngIf="hero">
+  <mat-card-title>
+    {{hero.name}} details!
+  </mat-card-title>
+
+  <mat-card-content>
+    <p><label>id: </label>{{hero.id}}</p>
+
+    <div class="input-container">
+      <mat-form-field>
+        <input matInput [(ngModel)]="hero.name" placeholder="Hero name" />
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+      <button mat-raised-button color="accent" (click)="goBack()">Back</button>
+
+      <button mat-raised-button color="primary" (click)="save()">Save</button>
+  </mat-card-actions>
+</mat-card>
